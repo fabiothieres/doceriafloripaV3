@@ -1,0 +1,40 @@
+# Editor
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Dependências, caso use npm futuramente
+node_modules/
+
+# Builds e caches
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Vercel
+.vercel/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Arquivos de ambiente / segredos
+.env
+.env.local
+.env.*.local
+
+# Temporários
+*.tmp
+*.temp

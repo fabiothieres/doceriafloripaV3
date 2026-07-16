@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel | Doceria Floripa</title>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+
+  <body>
+    <main class="admin-shell">
+      <section class="login-card" id="loginView">
+        <div class="brand">
+          <img src="../img/logo.png" alt="Logo Doceria Floripa" />
+          <div>
+            <p class="eyebrow">Painel privado</p>
+            <h1>Doceria Floripa</h1>
+          </div>
+        </div>
+
+        <p class="muted">Entre com o e-mail e senha da cliente para editar o cardápio.</p>
+
+        <form id="loginForm" class="form">
+          <label>
+            E-mail
+            <input type="email" id="loginEmail" autocomplete="email" required />
+          </label>
+
+          <label>
+            Senha
+            <input type="password" id="loginPassword" autocomplete="current-password" required />
+          </label>
+
+          <button class="btn primary" type="submit">Entrar</button>
+          <p class="form-message" id="loginMessage"></p>
+        </form>
+      </section>
+
+      <section class="dashboard hidden" id="dashboardView">
+        <header class="dashboard-header">
+          <div>
+            <p class="eyebrow">Gerenciar cardápio</p>
+            <h1>Produtos do site</h1>
+            <p class="muted">Adicione, edite, oculte ou remova produtos sem mexer no código.</p>
+          </div>
+
+          <div class="header-actions">
+            <a class="btn secondary" href="../index.html" target="_blank" rel="noopener">Ver site</a>
+            <button class="btn ghost" id="logoutBtn" type="button">Sair</button>
+          </div>
+        </header>
+
+        <div class="dashboard-grid">
+          <form id="productForm" class="panel form">
+            <h2 id="formTitle">Novo produto</h2>
+            <input type="hidden" id="productId" />
+
+            <label>
+              Nome do produto
+              <input type="text" id="name" placeholder="Ex: Brownie artesanal" required />
+            </label>
+
+            <label>
+              Descrição
+              <textarea id="description" rows="4" placeholder="Descreva o produto" required></textarea>
+            </label>
+
+            <div class="two-columns">
+              <label>
+                Preço
+                <input type="text" id="price" placeholder="Ex: A partir de R$6,50" />
+              </label>
+
+              <label>
+                Texto do botão
+                <input type="text" id="actionLabel" placeholder="Ex: Encomendar" />
+              </label>
+            </div>
+
+            <label>
+              Link do botão
+              <input type="url" id="actionUrl" placeholder="https://wa.me/... ou link do cardápio" />
+            </label>
+
+            <div class="upload-box">
+              <label>
+                Imagem do produto
+                <input type="file" id="imageFile" accept="image/*" />
+              </label>
+
+              <div class="upload-preview" id="uploadPreview">
+                <span>Nenhuma imagem selecionada</span>
+              </div>
+
+              <input type="hidden" id="imageUrl" />
+
+              <p class="help-text">
+                Ao salvar, a imagem será enviada para o Cloudinary automaticamente.
+              </p>
+            </div>
+
+            <details class="manual-image">
+              <summary>Usar link de imagem manualmente</summary>
+
+              <label>
+                Link da imagem
+                <input type="text" id="manualImageUrl" placeholder="https://... ou img/brownie.png" />
+              </label>
+            </details>
+
+            <label>
+              Texto alternativo da imagem
+              <input type="text" id="imageAlt" placeholder="Ex: Brownie recheado" />
+            </label>
+
+            <div class="checks">
+              <label class="check">
+                <input type="checkbox" id="featured" />
+                Marcar como mais pedido
+              </label>
+
+              <label class="check">
+                <input type="checkbox" id="active" checked />
+                Mostrar no site
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Salvar produto</button>
+              <button class="btn secondary" id="cancelEditBtn" type="button">Cancelar edição</button>
+            </div>
+
+            <p class="form-message" id="productMessage"></p>
+          </form>
+
+          <section class="panel">
+            <div class="products-title">
+              <h2>Produtos cadastrados</h2>
+              <span id="productsCount">0</span>
+            </div>
+
+            <div class="admin-products" id="adminProducts">
+              <p class="muted">Carregando produtos...</p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>

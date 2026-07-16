@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Doceria Floripa: doces artesanais, bolos decorados, brownies, copos da felicidade e encomendas pelo WhatsApp."
+    />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Doceria Floripa</title>
+  </head>
+
+  <body id="top">
+    <header class="header">
+      <nav class="navbar" aria-label="Menu principal">
+        <a href="#top" class="logo" aria-label="Doceria Floripa">
+          <img src="img/logo.png" alt="Logo Doceria Floripa" />
+          <span class="logo-nav">Doceria Floripa</span>
+        </a>
+
+        <button class="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu">
+          <li><a href="#top">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#como-encomendar">Como encomendar</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Doces artesanais em Floripa</p>
+          <h1>Sabores feitos com carinho para momentos especiais.</h1>
+          <p class="hero-text">
+            Bolos, brownies e sobremesas preparadas com capricho, ingredientes selecionados
+            e aquele toque caseiro que conquista na primeira mordida.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="https://wa.me/5548998673404?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20uma%20encomenda." target="_blank" rel="noopener">
+              Fazer encomenda
+            </a>
+            <a class="btn secondary" href="#cardapio">Ver cardápio</a>
+          </div>
+
+          <div class="hero-badges" aria-label="Destaques da doceria">
+            <span>🍓 Artesanal</span>
+            <span>🎂 Sob encomenda</span>
+            <span>💝 Feito com amor</span>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="img/banner.jpg" alt="Bolo artesanal com morangos" />
+          <div class="floating-card">
+            <strong>+ sabor</strong>
+            <span>em cada detalhe</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="cardapio" class="section menu-section">
+        <div class="section-heading">
+          <p class="eyebrow">Nosso cardápio</p>
+          <h2>Escolha sua próxima delícia</h2>
+          <p>Produtos artesanais para presentear, comemorar ou deixar o dia mais doce.</p>
+        </div>
+
+        <div class="cards-grid" id="productsGrid" aria-live="polite">
+          <p class="loading-products">Carregando cardápio...</p>
+        </div>
+      </section>
+
+      <section id="sobre" class="section about-section">
+        <div class="about-card">
+          <div>
+            <p class="eyebrow">Sobre a doceria</p>
+            <h2>Uma doceria pequena, delicada e cheia de cuidado.</h2>
+          </div>
+          <p>
+            A Doceria Floripa nasceu para transformar doces em lembranças especiais.
+            Cada pedido é preparado com atenção aos detalhes, desde a decoração até a entrega.
+          </p>
+        </div>
+      </section>
+
+      <section id="como-encomendar" class="section order-section">
+        <div class="section-heading">
+          <p class="eyebrow">Como encomendar</p>
+          <h2>Seu pedido em 3 passos simples</h2>
+          <p>Um processo rápido para você escolher, combinar os detalhes e receber tudo com carinho.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">01</span>
+            <h3>Escolha o doce</h3>
+            <p>Veja o cardápio e escolha entre bolo, brownie, copo da felicidade ou opções especiais.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">02</span>
+            <h3>Chame no WhatsApp</h3>
+            <p>Envie sua escolha, data desejada, quantidade e qualquer detalhe de personalização.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">03</span>
+            <h3>Confirme e aproveite</h3>
+            <p>Após combinar valor e prazo, seu pedido será preparado com cuidado para você.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="section-heading">
+          <p class="eyebrow">Depoimentos</p>
+          <h2>Quem prova, recomenda</h2>
+          <p>Alguns comentários que combinam com a experiência que a doceria quer entregar.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p>“O bolo ficou lindo e muito gostoso. Foi o destaque da comemoração!”</p>
+            <strong>Cliente de aniversário</strong>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p>“Os brownies chegaram caprichados, bem recheados e com uma apresentação impecável.”</p>
+            <strong>Cliente de encomenda</strong>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p>“Atendimento atencioso e doces deliciosos. Dá para sentir o cuidado em cada detalhe.”</p>
+            <strong>Cliente fiel</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="contato" class="section contact-section">
+        <div class="section-heading">
+          <p class="eyebrow">Contato</p>
+          <h2>Vamos adoçar seu dia?</h2>
+          <p>Faça sua encomenda pelo WhatsApp ou acompanhe as novidades nas redes sociais.</p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Encomendas</h3>
+            <p>Chame no WhatsApp para consultar sabores, valores e disponibilidade.</p>
+            <a class="btn primary full" href="https://wa.me/5548998673404?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20uma%20encomenda." target="_blank" rel="noopener">
+              Falar no WhatsApp
+            </a>
+          </article>
+
+          <article class="contact-card soft">
+            <h3>Informações</h3>
+            <ul>
+              <li><strong>Telefone:</strong> +55 (48) 99867-3404</li>
+              <li><strong>Email:</strong> floripadoceria@gmail.com</li>
+              <li><strong>Instagram:</strong> @doceria.floripa</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="#top" class="footer-logo">
+        <img src="img/logo.png" alt="Logo Doceria Floripa" />
+        <span>Doceria Floripa</span>
+      </a>
+      <p>Feito com ❤️ e muito carinho.</p>
+      <small>© 2026 Doceria Floripa. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/fabio-thieres-00b320265/" target="_blank">Fabio Thieres.</a></small>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
