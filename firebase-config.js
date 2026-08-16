@@ -2,10 +2,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/fireba
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 
-// Substitua pelos dados do seu projeto no Firebase.
-// Firebase Console > Configurações do projeto > Seus apps > Configuração do SDK.
+
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY_AQUI", // ⚠️ Preencha com sua chave localmente
+  apiKey: "AIzaSyDUMEJjJrpyLuakOFFh4Qp1frUid27IlS8",
   authDomain: "doceria-floripa.firebaseapp.com",
   projectId: "doceria-floripa",
   storageBucket: "doceria-floripa.firebasestorage.app",
